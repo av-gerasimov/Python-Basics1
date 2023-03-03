@@ -11,6 +11,7 @@ class Customers:
     def get_customer(self):
         return f'{self.first_name} {self.last_name}. {self.city}.'
 
+
 costomer_1 = Customers('Иван','Петров','Москва', 100)
 costomer_2 = Customers('Петр','Иванов','Ярославль', 200)
 costomer_3 = Customers('Jacques','Dubois','Paris', 300)
