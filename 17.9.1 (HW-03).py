@@ -34,17 +34,17 @@ while True:
         s = input('Введите последовательность чисел через пробел:\n')
         element = input('Введите элемент:\n')
         st = s + ' ' + element  # добавляю элемент к первой последовательности, чтобы он точно был в списке
-        array = list(map(int, st.split()))
+        array = list(map(float, st.split()))
         break
     except:
         print('Введенные символы не соответствуют условию. Повторите ввод.')
 
 
-element = int(element)
+element = float(element)
 qsort(array, 0, len(array) - 1)
 index = binary_search(array, element, 0, len(array) - 1)
 if index > 0:
-    print(f'Предыдущй элемент {index - 1} по счету')
+    print(f'Предыдущй элемент {index} по счету')
 else:
     print('Предыдущего элемента не существует')
 array.pop(index)  # удаляю вставленный элемент
