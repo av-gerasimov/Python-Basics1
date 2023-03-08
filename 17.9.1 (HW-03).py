@@ -35,12 +35,12 @@ while True:
         element = input('Введите элемент:\n')
         st = s + ' ' + element  # добавляю элемент к первой последовательности, чтобы он точно был в списке
         array = list(map(float, st.split()))
+        element = float(element)
         break
     except:
         print('Введенные символы не соответствуют условию. Повторите ввод.')
 
 
-element = float(element)
 qsort(array, 0, len(array) - 1)
 index = binary_search(array, element, 0, len(array) - 1)
 if index > 0:
